@@ -49,7 +49,7 @@ activities = {
         "description": "Learn music theory and play instruments",
         "schedule": "Thursdays, 4:00 PM - 5:30 PM",
         "max_participants": 10,
-        "participants": [""]
+        "participants": []
     },
     "Soccer Team": {
         "description": "Join the school soccer team and compete in matches",
@@ -110,7 +110,7 @@ def signup_for_activity(activity_name: str, email: str):
     # Get the specificy activity
     activity = activities[activity_name]
 
-    # Validar se o aluno já está inscrito
+    # Validate if the student is already signed up
     if email in activity["participants"]:
         raise HTTPException(status_code=400, detail="Already signed up for this activity")
 
