@@ -43,7 +43,7 @@ activities = {
         "description": "Explore various art techniques and mediums",
         "schedule": "Tuesdays, 4:00 PM - 5:30 PM",
         "max_participants": 15,
-        "participants": [""]
+        "participants": []
     },
     "Music Class": {
         "description": "Learn music theory and play instruments",
